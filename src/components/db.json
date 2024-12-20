@@ -1,0 +1,29 @@
+{
+    "songs": [
+      {
+        "id": 1,
+        "title": "Enchanted",
+        "artist": "Taylor Swift",
+        "image": "https://imageio.forbes.com/specials-images/imageserve/646e6affb9a2a85595a62c39/0x0.jpg?format=jpg&crop=1573,1574,x239,y256,safe&height=416&width=416&fit=bounds"
+      },
+      {
+        "id": 2,
+        "title": "Lonely",
+        "artist": "Justin Bieber",
+        "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTLAL4gQX-rAc535KByr82Ig3MuGtr2BpeVHN9v3YE0yb2gliyadazIj1XS1UantBNCLIwEP8Sv1pycMrU"
+      },
+      {
+        "id": 3,
+        "title": "Pink Skies",
+        "artist": "Zach Bryan",
+        "image": "https://substreammagazine.com/wp-content/uploads/2023/08/646b54d31434a.webp"
+      },
+      {
+        "id": 4,
+        "title": "Two Black Cadillacs",
+        "artist": "Carrie Underwood",
+        "image": "https://www.rollingstone.com/wp-content/uploads/2024/08/carrie-underwood-judge.jpg?w=1581&h=1054&crop=1"
+      }
+    ]
+  }
+  

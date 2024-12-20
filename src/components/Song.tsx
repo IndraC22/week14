@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import ArtistCard from './ArtistCard';
 
 interface SongProps {
-  song: { title: string; artist: string };
+  song: { title: string; artist: string; image:string };
   // A number representing the song's index in a list.
   index: number;
   removeSong: (index: number) => void;
@@ -14,8 +15,13 @@ const Song: React.FC<SongProps> = ({ song, index, removeSong, updateSong }) => {
   const [title, setTitle] = useState(song.title);
   const [artist, setArtist] = useState(song.artist);
 
+  // const handleUpdate = () => {
+  //   updateSong(index, { title, artist });
+  //   setIsEditing(false);
+  // };
+
   const handleUpdate = () => {
-    updateSong(index, { title, artist });
+    updateSong(index, { ...song, title, artist }); // Include the original id and image
     setIsEditing(false);
   };
  //it shows two input fields for title and artist and a "Save" button that calls handleUpdate.
@@ -40,11 +46,9 @@ const Song: React.FC<SongProps> = ({ song, index, removeSong, updateSong }) => {
         </>
       ) : (
         <>
-          <span>{song.title} by {song.artist}</span>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
+          <ArtistCard title = {song.title} artist ={song.artist} image={song.image} delete={() => removeSong(index)} index={index} onEdit={() => setIsEditing(true)} />
         </>
       )}
-      <button onClick={() => removeSong(index)}>Delete</button>
     </li>
   );
 };

@@ -3,7 +3,7 @@ import Song from './Song';
 
 //this is the props
 interface SongListProps {
-  songs: { title: string; artist: string }[];
+  songs: { title: string; artist: string; image:string }[];
   //takes an index as an argument & returns void
   removeSong: (index: number) => void;
   updateSong: (index: number, song: { title: string; artist: string }) => void;
